@@ -1,0 +1,23 @@
+ <p>
+    <strong>imgcode:</strong>
+    <%= chapter.imgcode %>
+  </p>
+    <p>
+    <strong>title:</strong>
+    <%= chapter.title %>
+  </p>
+ 
+  <p>
+    <strong>subtitle:</strong>
+    <%= chapter.subtitle %>
+  </p>
+    <p>
+    <strong>body:</strong>
+    <%= chapter.body %>
+  </p>
+  <p>
+  <%= link_to 'Destroy chapter', [chapter.course, chapter],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+  </p>
+  <td><%= link_to "编辑", [:edit, chapter.course, chapter], class:"btn btn-warning" %></td>

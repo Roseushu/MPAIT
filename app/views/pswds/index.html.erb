@@ -1,0 +1,23 @@
+<h1>Listing students</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Password</th>
+  </tr>
+
+<% @pswds.each do |pswd| %>
+  <tr>
+    <td><%= pswd.name %></td>
+    <td><%= pswd.pwd %></td>
+    <td><%= link_to 'Show', pswd_path(pswd) %></td>
+    <td><%= link_to 'Edit', edit_pswd_path(pswd) %></td>
+    <td><%= link_to 'Destroy', pswd_path(pswd),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Student', new_pswd_path %>

@@ -1,0 +1,24 @@
+<div class="container main-content">
+	<%= form_for([@chapter.course, @chapter]) do |f| %>
+	<p style="color:black">
+		<%= f.label :imgcode %><br>
+		<%= f.text_field :imgcode %>
+	</p>
+	<p style="color:black">
+		<%= f.label :title %><br>
+		<%= f.text_field :title %>
+	</p>
+	<p style="color:black">
+		<%= f.label :subtitle %><br>
+		<%= f.text_area :subtitle %>
+	</p>
+	<p style="color:black">
+		<%= f.label :body %><br>
+		<%= f.text_area :body %>
+	</p>
+	<p style="color:black">
+		<%= f.submit %>
+	</p>
+	<% end %>
+	<%= link_to "返回", courses_path %>
+</div>

@@ -1,0 +1,28 @@
+<%= render :partial =>
+"navbar"%>
+<div class="container video">
+	<div class="row">
+		<div class="col-md-7 text-left">
+<video width="600" height="400" poster="poster.jpg" controls="controls" preload="none">
+    <source type="video/mp4" src="http://vjs.zencdn.net/v/oceans.mp4" >
+   
+</video>
+		</div>
+		<div class="col-md-5">
+			<div class="introduce">
+				<h3 class="text-left">课程介绍：</h3>
+				<p class="text-justify">《微机原理与接口技术》是计算机技术的硬件基础课程之一，通过该课程的学习使学生从理论和实践上掌握微型计算机的工作原理和基本组成，熟悉微机的汇编指令体系及汇编程序设计方法，以及常用接口技术及其软硬件设计方法，建立微机系统的整体概念，达到初步具有微机应用系统的软硬件设计、开发能力。
+　　</p>
+				<h3 class="text-left">讲师：束庆森</h3>
+				<h3 class="text-left">相关课程:</h3>
+				<h4 class="text-left"><a href="main">1.微机原理与接口技术的简介...</a></h4>
+				<h4 class="text-left"><a href="main">2.微型计算机的系统...</a></h4>
+				<h4 class="text-left"><a href="main">3.8086CPU的内部结构...</a></h4>
+				<h4 class="text-left"><a href="main">4.8086CPU的寻址方式...</a></h4>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<%= render :partial =>"footer"%>

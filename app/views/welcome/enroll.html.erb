@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheet/signin.css">
+</head>
+<body>
+<div class="container login_martop">
+
+<%= simple_form_for :pswd, html: { class: 'form-signin' }, url: pswds_path do |f| %>
+<h2 class="form-signin-heading">注册新用户</h2>
+
+
+  <%= f.input :name, placeholder: '用户名', :class => 'form-control' %>
+  <%= f.input :pwd, placeholder: '密码', :class => 'form-control' %>
+  <%= f.button :submit ,'注册', :class => 'btn btn-lg btn-primary btn-block' %>
+<% end %>
+      </form>
+
+</div> 
+</body>
+</html>

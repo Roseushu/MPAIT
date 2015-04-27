@@ -1,0 +1,62 @@
+<%= render :partial =>
+"navbar"%>
+<div class="container">
+	<div class="row">
+		<div class="col-md-2 sidebar">
+			<ul class="nav nav-sidebar">
+				<li >
+					<a >课程主页</a>
+				</li>
+			</ul>
+			<ul class="nav nav-sidebar">
+				<li>
+					<a href="#">I.概述</a>
+				</li>
+				<li>
+					<a href="#">II.微处理器</a>
+				</li>
+				<li>
+					<a href="#">III.寻址方式</a>
+				</li>
+				<li>
+					<a href="#">IV.汇编语言</a>
+				</li>
+				<li>
+					<a href="#">V.存储系统</a>
+				</li>
+				<li>
+					<a href="#">VI.接口技术</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-10">
+			<div class="gray">
+
+				<% @course.each do |course| %>
+				<div class="row row_pad">
+					<div class="col-md-1 boxbg">
+						<div class="numpad">
+							<%= course.code %></div>
+					</div>
+					<div class="col-md-11">
+						<div class="videotext">
+							<%= course.name %></div>
+					</div>
+				</div>
+				<div class="row">
+					<% course.chapters.each do |chapter| %>
+					<div class="col-md-4"><a href="video">
+						<%= image_tag chapter.imgcode, class:"course_img" %></a>
+						<div class="video_title">
+							<%= chapter.title%></div>
+						<div class="video_futitle">
+							<%= chapter.subtitle%></div>
+					</div>
+					<% end %>
+				</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
+<%= render :partial =>"footer"%>

@@ -1,0 +1,32 @@
+<h1>Editing student</h1>
+
+<%= form_for :pswd, url: pswd_path(@pswd), method: :patch do |f| %>
+<% if @pswd.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+      <ul>
+      <% @pswd.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label :name ,'姓名' %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :pwd ,'密码' %><br>
+    <%= f.password_field :pwd %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', pswds_path %>|
+<%= link_to 'Show', @pswd %> 

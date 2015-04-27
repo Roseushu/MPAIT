@@ -1,0 +1,15 @@
+<p>
+  <strong>Code:</strong>
+  <%= @course.code %>
+</p>
+ 
+<p>
+  <strong>Name:</strong>
+  <%= @course.name %>
+</p>
+<h2>chapters</h2>
+<%= render @course.chapters %>
+<h2>Add a chapter:</h2>
+<%= render "chapters/form" %>
+<%= link_to 'Back', courses_path %>
+<%= link_to 'Edit', edit_course_path %>

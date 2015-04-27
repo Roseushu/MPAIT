@@ -1,0 +1,46 @@
+body{
+	background-color: #333;
+}
+.titlepage{
+	text-indent:2em;
+	font-size: 18px;
+}
+.gray{
+	background-color:#232222;
+}
+.course_img{
+	width: 85%;
+}
+.boxbg{
+	background:url(01.png) no-repeat;
+	background-size: 100%;
+	width:40px;
+	height:40px; 
+	font-size: 26px;
+	color:white;
+	position:relative; 
+    	left:20px; 
+}
+.numpad{
+text-align: center;
+}
+.row_pad{
+	padding: 10px;
+}
+.videotext{
+	text-align: left;
+	font-size: 26px;
+	margin: 0 0 0 10px;
+}
+.login_martop{
+	padding-top: 50px;
+}
+.video_title{
+	font-size: 18px;
+	margin-top: 10px;
+}
+.video_futitle{
+	color: #848484;
+	font-size: 14px;
+	margin-top: 5px;
+}

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pswd.name %>
+</p>
+ 
+<p>
+  <strong>Password:</strong>
+  <%= @pswd.password %>
+</p>
+
+<%= link_to 'Back', pswds_path %>|
+<%= link_to 'Edit', edit_pswd_path(@pswd) %> 
